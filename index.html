@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport filter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="box-common-container main-filter">
+            <div class="table-section">
+                <div class="table-heading">
+                    <h2 class="">Filter <span>airports</span></h2>
+                    <span class="fa fa-th-large" aria-hidden="true"></span>
+                </div>
+                <div class="filter-block">
+                    <div class="filter-type">
+                        <h4 class="sub-heading">Type</h4>
+                        <div class="checkbox-list">
+                            <input type="checkbox" id="Small" value="small">
+                            <label> Small</label>
+
+                            <input type="checkbox" id="Medium" value="medium">
+                            <label> Medium</label>
+
+                            <input type="checkbox" id="Large" value="large">
+                            <label> Large</label>
+
+                            <input type="checkbox" id="Heliport" value="heliport">
+                            <label> Heliport</label>
+
+                            <input type="checkbox" id="Closed" value="closed">
+                            <label> Closed</label>
+
+                            <input type="checkbox" id="favorite" value="favorite">
+                            <label> In your favorites</label>
+                        </div>
+                    </div>
+                    <div class="search-block">
+                        <h4 class="sub-heading">Filter by search</h4>
+                        <input type="text" placeholder="Search" id="searchkeyword">
+                    </div>
+                </div>
+                <div id="tableview"></div>
+                <div class="table-pagination-section">
+                    <div class="table-heading">
+                        <span class="fa fa-arrow-left prev-span" aria-hidden="true"></span>
+                        <span class="pagination-text">Showing
+                            <span class="pageStart">1</span>-
+                            <span class="pageTo">4</span> of
+                            <span class="totalcountvalue">Loading...</span> results</span>
+                        <span class="fa fa-arrow-right next-span" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
